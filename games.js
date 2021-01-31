@@ -20,7 +20,7 @@ function nextSequence(){
   // Using jQuery to select the button with the same id as the randomNumberChosen
   var chosenButtonid = "#" + randomChosenColor;
 
-  var chosenButtonMp3 = "sounds/" + randomChosenColor + ".mp3";
+  var chosenButtonMp3 =  randomChosenColor + ".mp3";
 
 
   // Adding the randomChosenColor to the gamePattern array
@@ -56,7 +56,7 @@ $(".container .btn").on("click", function(){
 //function to animate the pressed button by the user
 
 function playSound(userChosenColor){
-  var chosenButtonMp3 = "sounds/" + userChosenColor + ".mp3";
+  var chosenButtonMp3 = userChosenColor + ".mp3";
 
   var chosenButtonid = "#" + userChosenColor;
 
